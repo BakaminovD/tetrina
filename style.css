@@ -27,7 +27,7 @@ body{
 
 .mobile-header{
     width: 100vw;
-    height: 10vh;
+    height: 10vw;
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, .3);
@@ -200,17 +200,19 @@ header{
 /*ОСНОВНОЙ КОНТЕНТ*/
 
 main{
-    width: 80vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    margin: 22vh 0 0 5vw;
-    
+    margin: 22vh 0 5vw 5vw;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 main p{
     width: 50vw;
     font-size: 20px;
     margin-bottom: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 main p a{
@@ -275,6 +277,13 @@ footer .none-block{
 /*ДЛЯ ПЛАНШЕТА*/
 
 @media only screen and (max-width: 1024px) {
+    header{
+        height: 13vh;
+    }
+    main{
+        margin: 15vh 0 2vw 5vw;
+        background-color: rgba(0, 0, 0, .3);
+    }
     .header-block .logo-block svg{
         width: 15vh;
         height: 15vh;
@@ -290,7 +299,7 @@ footer .none-block{
 
 /*ДЛЯ МОБИЛЬНОЙ ВЕРСИИ*/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) { /*450*/
     .mobile-header{
         display: flex;
     }
@@ -298,7 +307,8 @@ footer .none-block{
         display: none;
     }
     main{
-        margin: 12vh 0 0 5vw;
+        width: 90vw;
+        margin: 12vw 0 0 5vw;
     }
     main p{
         width: 70vw;
